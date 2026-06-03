@@ -1,0 +1,16 @@
+name: Build Project
+description: Compila el proyecto para verificar errores de compilación
+
+runs:
+  using: composite
+
+  steps:
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: '17'
+
+    - name: Compile project
+      shell: bash
+      run: mvn compile
