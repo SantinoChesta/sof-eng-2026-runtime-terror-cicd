@@ -1,0 +1,16 @@
+name: Run Tests
+description: Ejecuta todos los tests del proyecto
+
+runs:
+  using: composite
+
+  steps:
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: '17'
+
+    - name: Run tests
+      shell: bash
+      run: mvn test
