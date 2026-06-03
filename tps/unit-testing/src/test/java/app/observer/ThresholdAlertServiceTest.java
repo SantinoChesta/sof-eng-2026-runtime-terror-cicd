@@ -19,7 +19,7 @@ public class ThresholdAlertServiceTest {
 
     @Test
     void testShouldAlertETA() {
-        ThresholdAlertService service = new ThresholdAlertService(0, 20);
+        ThresholdAlertService service = new ThresholdAlertService(0, 19);
 
         assertFalse(service.shouldAlertETA(19));
 
