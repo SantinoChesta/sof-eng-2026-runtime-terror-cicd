@@ -13,4 +13,4 @@ runs:
 
     - name: Run tests
       shell: bash
-      run: mvn test
+      run: mvn -f tps/unit-testing/pom.xml test

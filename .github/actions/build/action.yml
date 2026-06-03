@@ -13,4 +13,4 @@ runs:
 
     - name: Compile project
       shell: bash
-      run: mvn compile
+      run: mvn -f tps/unit-testing/pom.xml compile
